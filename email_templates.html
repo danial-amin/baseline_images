@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Personalized "<b>{canvas_name}</b>"</title>
+    <style type="text/css">
+        body {{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+        }}
+        .email-container {{
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }}
+        .header {{
+            background-color: #4CAF50; /* Changed from #5DD140 to #4CAF50 */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }}
+        .content {{
+            padding: 20px;
+            background-color: #f4f4f4;
+        }}
+        .footer {{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 12px;
+        }}
+        .button {{
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 20px; /* Changed from 10px to 20px */
+            background-color: #008CBA; /* New color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }}
+        .button:hover {{
+            background-color: #005f73; /* New hover color */
+        }}
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="./i13logo.png" alt="logo" style="width: 250px; max-width: 100%;"> <!-- Added logo image -->
+        </div>
+        <div class="content">
+            <h1>Hello, {user_name}</h1> <!-- Changed h2 to h1 -->
+            <p>We are thrilled to present to you the strategic canvas, "<b>{canvas_name}</b>", powered by Bob, a unique blend of technological and strategic innovation crafted just for you.</p>
+            <img src="data:image/png;base64,{canvas_image}" alt="Canvas Image" style="max-width: 100%;"> <!-- Added canvas image -->
+            <a href="{website_url}" class="button">View Canvas</a>
+            <p>Thank you for choosing Bob as your strategic partner. We're always here to bring your ideas to life.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; {current_year} Bob Strategy. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

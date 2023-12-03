@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Personalized "<b>{canvas_name}</b>"</title>
+    <style type="text/css">
+        body {{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+        }}
+        .email-container {{
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }}
+        .header {{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }}
+        .content {{
+            padding: 20px;
+            background-color: #f4f4f4;
+        }}
+        .footer {{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 12px;
+        }}
+        .button {{
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 20px;
+            background-color: #008CBA;
+            foreground-color: white;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }}
+        .button:hover {{
+            background-color: #005f73;
+        }}
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Bob Strategy</h1>
+        </div>
+        <div class="content">
+            <h2>Hello {user_name},</h2>
+            <p>We are thrilled to present to you the strategic canvas, "<b>{canvas_name}</b>", powered by Bob, a unique blend of technological and strategic innovation crafted just for you.</p>
+            <p>Click below to view your canvas in full glory and explore more details about it:</p>
+            <a href="{website_url}" class="button">View Canvas</a>
+            <p>Thank you for choosing Bob as your strategic partner. We're always here to bring your ideas to life.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; {current_year} Bob Strategy. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
